@@ -1,0 +1,253 @@
+-k flag not specified, so building main hash table with default 15-mers
+-j flag not specified, so building regional hash tables with default 6-mers
+Writing files under data
+Not sorting chromosomes.  To sort chromosomes other ways, use the -s flag.
+Creating files in directory data/MiSeqGmapDb
+Running "/shared/centos7/gsnap/2021-12-17/bin/fa_coords"        -o "data/MiSeqGmapDb.coords" -f "data/MiSeqGmapDb.sources"
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmap_process"   -c "data/MiSeqGmapDb.coords" -f "data/MiSeqGmapDb.sources" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex"  -d MiSeqGmapDb -D "data/MiSeqGmapDb" -A -s none
+Reading coordinates from file data/MiSeqGmapDb.coords
+Logging contig NODE_1_length_196102_cov_7.373696 at NODE_1_length_196102_cov_7.373696:1..196102 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_2_length_161595_cov_7.175096 at NODE_2_length_161595_cov_7.175096:1..161595 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_3_length_156140_cov_7.211212 at NODE_3_length_156140_cov_7.211212:1..156140 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_4_length_139860_cov_7.687679 at NODE_4_length_139860_cov_7.687679:1..139860 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_5_length_129503_cov_7.143363 at NODE_5_length_129503_cov_7.143363:1..129503 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_6_length_126813_cov_7.301859 at NODE_6_length_126813_cov_7.301859:1..126813 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_7_length_114481_cov_7.577351 at NODE_7_length_114481_cov_7.577351:1..114481 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_8_length_112947_cov_7.044901 at NODE_8_length_112947_cov_7.044901:1..112947 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_9_length_97127_cov_6.755377 at NODE_9_length_97127_cov_6.755377:1..97127 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_10_length_94563_cov_6.661425 at NODE_10_length_94563_cov_6.661425:1..94563 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_11_length_84909_cov_7.275143 at NODE_11_length_84909_cov_7.275143:1..84909 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_12_length_84439_cov_7.273583 at NODE_12_length_84439_cov_7.273583:1..84439 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_13_length_82732_cov_6.876229 at NODE_13_length_82732_cov_6.876229:1..82732 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_14_length_80151_cov_7.007703 at NODE_14_length_80151_cov_7.007703:1..80151 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_15_length_79453_cov_6.963614 at NODE_15_length_79453_cov_6.963614:1..79453 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_16_length_76334_cov_7.057971 at NODE_16_length_76334_cov_7.057971:1..76334 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_17_length_76323_cov_7.594115 at NODE_17_length_76323_cov_7.594115:1..76323 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_18_length_71544_cov_7.444040 at NODE_18_length_71544_cov_7.444040:1..71544 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_19_length_71436_cov_7.185498 at NODE_19_length_71436_cov_7.185498:1..71436 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_20_length_70255_cov_6.826980 at NODE_20_length_70255_cov_6.826980:1..70255 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_21_length_65607_cov_6.778802 at NODE_21_length_65607_cov_6.778802:1..65607 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_22_length_64621_cov_6.717142 at NODE_22_length_64621_cov_6.717142:1..64621 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_23_length_62811_cov_7.628992 at NODE_23_length_62811_cov_7.628992:1..62811 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_24_length_59767_cov_6.778520 at NODE_24_length_59767_cov_6.778520:1..59767 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_25_length_59117_cov_7.395280 at NODE_25_length_59117_cov_7.395280:1..59117 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_26_length_58197_cov_7.253122 at NODE_26_length_58197_cov_7.253122:1..58197 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_27_length_58171_cov_6.501927 at NODE_27_length_58171_cov_6.501927:1..58171 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_28_length_54684_cov_6.702759 at NODE_28_length_54684_cov_6.702759:1..54684 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_29_length_53704_cov_7.681411 at NODE_29_length_53704_cov_7.681411:1..53704 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_30_length_46064_cov_6.621944 at NODE_30_length_46064_cov_6.621944:1..46064 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_31_length_46045_cov_7.076430 at NODE_31_length_46045_cov_7.076430:1..46045 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_32_length_43896_cov_7.469583 at NODE_32_length_43896_cov_7.469583:1..43896 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_33_length_43526_cov_7.667825 at NODE_33_length_43526_cov_7.667825:1..43526 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_34_length_42537_cov_6.998635 at NODE_34_length_42537_cov_6.998635:1..42537 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_35_length_42453_cov_7.228761 at NODE_35_length_42453_cov_7.228761:1..42453 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_36_length_38562_cov_7.533176 at NODE_36_length_38562_cov_7.533176:1..38562 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_37_length_38459_cov_6.901260 at NODE_37_length_38459_cov_6.901260:1..38459 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_38_length_38183_cov_6.964200 at NODE_38_length_38183_cov_6.964200:1..38183 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_39_length_37366_cov_6.160435 at NODE_39_length_37366_cov_6.160435:1..37366 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_40_length_33231_cov_6.993067 at NODE_40_length_33231_cov_6.993067:1..33231 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_41_length_29301_cov_7.098612 at NODE_41_length_29301_cov_7.098612:1..29301 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_42_length_28675_cov_7.295807 at NODE_42_length_28675_cov_7.295807:1..28675 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_43_length_26773_cov_6.342990 at NODE_43_length_26773_cov_6.342990:1..26773 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_44_length_25459_cov_7.809439 at NODE_44_length_25459_cov_7.809439:1..25459 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_45_length_24946_cov_7.346752 at NODE_45_length_24946_cov_7.346752:1..24946 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_46_length_24681_cov_6.505320 at NODE_46_length_24681_cov_6.505320:1..24681 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_47_length_23658_cov_6.810575 at NODE_47_length_23658_cov_6.810575:1..23658 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_48_length_21955_cov_7.265936 at NODE_48_length_21955_cov_7.265936:1..21955 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_49_length_21881_cov_7.205306 at NODE_49_length_21881_cov_7.205306:1..21881 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+Logging contig NODE_50_length_21663_cov_6.609635 at NODE_50_length_21663_cov_6.609635:1..21663 in genome MiSeqGmapDb
+ => primary (linear) chromosome
+More than 50 contigs.  Will stop printing messages
+Total genomic length = 4011353 bp
+divsort == NO_SORT
+Have a total of 390 chromosomes
+Writing chromosome file data/MiSeqGmapDb/MiSeqGmapDb.chromosome
+Chromosome NODE_1_length_196102_cov_7.373696 has universal coordinates 1..196102
+Chromosome NODE_2_length_161595_cov_7.175096 has universal coordinates 196103..357697
+Chromosome NODE_3_length_156140_cov_7.211212 has universal coordinates 357698..513837
+Chromosome NODE_4_length_139860_cov_7.687679 has universal coordinates 513838..653697
+Chromosome NODE_5_length_129503_cov_7.143363 has universal coordinates 653698..783200
+Chromosome NODE_6_length_126813_cov_7.301859 has universal coordinates 783201..910013
+Chromosome NODE_7_length_114481_cov_7.577351 has universal coordinates 910014..1024494
+Chromosome NODE_8_length_112947_cov_7.044901 has universal coordinates 1024495..1137441
+Chromosome NODE_9_length_97127_cov_6.755377 has universal coordinates 1137442..1234568
+Chromosome NODE_10_length_94563_cov_6.661425 has universal coordinates 1234569..1329131
+Chromosome NODE_11_length_84909_cov_7.275143 has universal coordinates 1329132..1414040
+Chromosome NODE_12_length_84439_cov_7.273583 has universal coordinates 1414041..1498479
+Chromosome NODE_13_length_82732_cov_6.876229 has universal coordinates 1498480..1581211
+Chromosome NODE_14_length_80151_cov_7.007703 has universal coordinates 1581212..1661362
+Chromosome NODE_15_length_79453_cov_6.963614 has universal coordinates 1661363..1740815
+Chromosome NODE_16_length_76334_cov_7.057971 has universal coordinates 1740816..1817149
+Chromosome NODE_17_length_76323_cov_7.594115 has universal coordinates 1817150..1893472
+Chromosome NODE_18_length_71544_cov_7.444040 has universal coordinates 1893473..1965016
+Chromosome NODE_19_length_71436_cov_7.185498 has universal coordinates 1965017..2036452
+Chromosome NODE_20_length_70255_cov_6.826980 has universal coordinates 2036453..2106707
+Chromosome NODE_21_length_65607_cov_6.778802 has universal coordinates 2106708..2172314
+Chromosome NODE_22_length_64621_cov_6.717142 has universal coordinates 2172315..2236935
+Chromosome NODE_23_length_62811_cov_7.628992 has universal coordinates 2236936..2299746
+Chromosome NODE_24_length_59767_cov_6.778520 has universal coordinates 2299747..2359513
+Chromosome NODE_25_length_59117_cov_7.395280 has universal coordinates 2359514..2418630
+Chromosome NODE_26_length_58197_cov_7.253122 has universal coordinates 2418631..2476827
+Chromosome NODE_27_length_58171_cov_6.501927 has universal coordinates 2476828..2534998
+Chromosome NODE_28_length_54684_cov_6.702759 has universal coordinates 2534999..2589682
+Chromosome NODE_29_length_53704_cov_7.681411 has universal coordinates 2589683..2643386
+Chromosome NODE_30_length_46064_cov_6.621944 has universal coordinates 2643387..2689450
+Chromosome NODE_31_length_46045_cov_7.076430 has universal coordinates 2689451..2735495
+Chromosome NODE_32_length_43896_cov_7.469583 has universal coordinates 2735496..2779391
+Chromosome NODE_33_length_43526_cov_7.667825 has universal coordinates 2779392..2822917
+Chromosome NODE_34_length_42537_cov_6.998635 has universal coordinates 2822918..2865454
+Chromosome NODE_35_length_42453_cov_7.228761 has universal coordinates 2865455..2907907
+Chromosome NODE_36_length_38562_cov_7.533176 has universal coordinates 2907908..2946469
+Chromosome NODE_37_length_38459_cov_6.901260 has universal coordinates 2946470..2984928
+Chromosome NODE_38_length_38183_cov_6.964200 has universal coordinates 2984929..3023111
+Chromosome NODE_39_length_37366_cov_6.160435 has universal coordinates 3023112..3060477
+Chromosome NODE_40_length_33231_cov_6.993067 has universal coordinates 3060478..3093708
+Chromosome NODE_41_length_29301_cov_7.098612 has universal coordinates 3093709..3123009
+Chromosome NODE_42_length_28675_cov_7.295807 has universal coordinates 3123010..3151684
+Chromosome NODE_43_length_26773_cov_6.342990 has universal coordinates 3151685..3178457
+Chromosome NODE_44_length_25459_cov_7.809439 has universal coordinates 3178458..3203916
+Chromosome NODE_45_length_24946_cov_7.346752 has universal coordinates 3203917..3228862
+Chromosome NODE_46_length_24681_cov_6.505320 has universal coordinates 3228863..3253543
+Chromosome NODE_47_length_23658_cov_6.810575 has universal coordinates 3253544..3277201
+Chromosome NODE_48_length_21955_cov_7.265936 has universal coordinates 3277202..3299156
+Chromosome NODE_49_length_21881_cov_7.205306 has universal coordinates 3299157..3321037
+Chromosome NODE_50_length_21663_cov_6.609635 has universal coordinates 3321038..3342700
+More than 50 contigs.  Will stop printing messages
+Writing chromosome IIT file data/MiSeqGmapDb/MiSeqGmapDb.chromosome.iit
+Writing IIT file header information...coordinates require 4 bytes each...done
+Processing null division/chromosome...sorting...writing...done (390 intervals)
+Writing IIT file footer information...done
+Writing IIT file header information...coordinates require 4 bytes each...done
+Processing null division/chromosome...sorting...writing...done (390 intervals)
+Writing IIT file footer information...done
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmap_process"   -c "data/MiSeqGmapDb.coords" -f "data/MiSeqGmapDb.sources" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex"  -d MiSeqGmapDb -D "data/MiSeqGmapDb" -G
+Genome length is 4011353 nt
+Trying to allocate 376067*4 bytes of memory...succeeded.  Building genome in memory.
+Reading coordinates from file data/MiSeqGmapDb.coords
+Writing contig NODE_1_length_196102_cov_7.373696 to universal coordinates 1..196102
+Writing contig NODE_2_length_161595_cov_7.175096 to universal coordinates 196103..357697
+Writing contig NODE_3_length_156140_cov_7.211212 to universal coordinates 357698..513837
+Writing contig NODE_4_length_139860_cov_7.687679 to universal coordinates 513838..653697
+Writing contig NODE_5_length_129503_cov_7.143363 to universal coordinates 653698..783200
+Writing contig NODE_6_length_126813_cov_7.301859 to universal coordinates 783201..910013
+Writing contig NODE_7_length_114481_cov_7.577351 to universal coordinates 910014..1024494
+Writing contig NODE_8_length_112947_cov_7.044901 to universal coordinates 1024495..1137441
+Writing contig NODE_9_length_97127_cov_6.755377 to universal coordinates 1137442..1234568
+Writing contig NODE_10_length_94563_cov_6.661425 to universal coordinates 1234569..1329131
+Writing contig NODE_11_length_84909_cov_7.275143 to universal coordinates 1329132..1414040
+Writing contig NODE_12_length_84439_cov_7.273583 to universal coordinates 1414041..1498479
+Writing contig NODE_13_length_82732_cov_6.876229 to universal coordinates 1498480..1581211
+Writing contig NODE_14_length_80151_cov_7.007703 to universal coordinates 1581212..1661362
+Writing contig NODE_15_length_79453_cov_6.963614 to universal coordinates 1661363..1740815
+Writing contig NODE_16_length_76334_cov_7.057971 to universal coordinates 1740816..1817149
+Writing contig NODE_17_length_76323_cov_7.594115 to universal coordinates 1817150..1893472
+Writing contig NODE_18_length_71544_cov_7.444040 to universal coordinates 1893473..1965016
+Writing contig NODE_19_length_71436_cov_7.185498 to universal coordinates 1965017..2036452
+Writing contig NODE_20_length_70255_cov_6.826980 to universal coordinates 2036453..2106707
+Writing contig NODE_21_length_65607_cov_6.778802 to universal coordinates 2106708..2172314
+Writing contig NODE_22_length_64621_cov_6.717142 to universal coordinates 2172315..2236935
+Writing contig NODE_23_length_62811_cov_7.628992 to universal coordinates 2236936..2299746
+Writing contig NODE_24_length_59767_cov_6.778520 to universal coordinates 2299747..2359513
+Writing contig NODE_25_length_59117_cov_7.395280 to universal coordinates 2359514..2418630
+Writing contig NODE_26_length_58197_cov_7.253122 to universal coordinates 2418631..2476827
+Writing contig NODE_27_length_58171_cov_6.501927 to universal coordinates 2476828..2534998
+Writing contig NODE_28_length_54684_cov_6.702759 to universal coordinates 2534999..2589682
+Writing contig NODE_29_length_53704_cov_7.681411 to universal coordinates 2589683..2643386
+Writing contig NODE_30_length_46064_cov_6.621944 to universal coordinates 2643387..2689450
+Writing contig NODE_31_length_46045_cov_7.076430 to universal coordinates 2689451..2735495
+Writing contig NODE_32_length_43896_cov_7.469583 to universal coordinates 2735496..2779391
+Writing contig NODE_33_length_43526_cov_7.667825 to universal coordinates 2779392..2822917
+Writing contig NODE_34_length_42537_cov_6.998635 to universal coordinates 2822918..2865454
+Writing contig NODE_35_length_42453_cov_7.228761 to universal coordinates 2865455..2907907
+Writing contig NODE_36_length_38562_cov_7.533176 to universal coordinates 2907908..2946469
+Writing contig NODE_37_length_38459_cov_6.901260 to universal coordinates 2946470..2984928
+Writing contig NODE_38_length_38183_cov_6.964200 to universal coordinates 2984929..3023111
+Writing contig NODE_39_length_37366_cov_6.160435 to universal coordinates 3023112..3060477
+Writing contig NODE_40_length_33231_cov_6.993067 to universal coordinates 3060478..3093708
+Writing contig NODE_41_length_29301_cov_7.098612 to universal coordinates 3093709..3123009
+Writing contig NODE_42_length_28675_cov_7.295807 to universal coordinates 3123010..3151684
+Writing contig NODE_43_length_26773_cov_6.342990 to universal coordinates 3151685..3178457
+Writing contig NODE_44_length_25459_cov_7.809439 to universal coordinates 3178458..3203916
+Writing contig NODE_45_length_24946_cov_7.346752 to universal coordinates 3203917..3228862
+Writing contig NODE_46_length_24681_cov_6.505320 to universal coordinates 3228863..3253543
+Writing contig NODE_47_length_23658_cov_6.810575 to universal coordinates 3253544..3277201
+Writing contig NODE_48_length_21955_cov_7.265936 to universal coordinates 3277202..3299156
+Writing contig NODE_49_length_21881_cov_7.205306 to universal coordinates 3299157..3321037
+More than 50 contigs.  Will stop printing messages
+A total of 0 non-ACGTNX characters were seen in the genome.
+Running cat "data/MiSeqGmapDb/MiSeqGmapDb.genomecomp" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -U > "data/MiSeqGmapDb/MiSeqGmapDb.genomebits128"
+Running cat "data/MiSeqGmapDb/MiSeqGmapDb.genomecomp" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -k 15 -q 3  -D "data/MiSeqGmapDb" -d MiSeqGmapDb -N
+Counting positions in genome MiSeqGmapDb (15 bp every 3 bp), position 0
+Number of positions: 4011353 => normal-sized genome
+Number of offsets: 1335154 => pages file not required
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -k 15 -q 3  -D "data/MiSeqGmapDb" -d MiSeqGmapDb -O "data/MiSeqGmapDb/MiSeqGmapDb.genomecomp"
+Offset compression types: bitpack64
+Allocating 16777216*1 bytes for packsizes
+Allocating 16777216*8 bytes for bitpacks
+Indexing offsets of oligomers in genome MiSeqGmapDb (15 bp every 3 bp), position 0
+Writing 1073741825 offsets compressed via bitpack64...done
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -k 15 -q 3  -D "data/MiSeqGmapDb" -d MiSeqGmapDb -P "data/MiSeqGmapDb/MiSeqGmapDb.genomecomp"
+Looking for genome MiSeqGmapDb in directory data/MiSeqGmapDb
+Looking for index files in directory data/MiSeqGmapDb
+  Pointers file is MiSeqGmapDb.ref153offsets64meta
+  Offsets file is MiSeqGmapDb.ref153offsets64strm
+  Positions file is MiSeqGmapDb.ref153positions
+Expanding offsetsstrm into counters...done
+Allocating 19661648 bytes for counterstrm
+Trying to allocate 1335154*4 bytes of memory for positions...succeeded.  Building positions in memory.
+Indexing positions of oligomers in genome MiSeqGmapDb (15 bp every 3 bp), position 0
+Writing 1335154 genomic positions to file data/MiSeqGmapDb/MiSeqGmapDb.ref153positions ...
+done
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -j 6  -D "data/MiSeqGmapDb" -d MiSeqGmapDb -Q "data/MiSeqGmapDb/MiSeqGmapDb.genomecomp"
+Writing regiondb
+Indexing offsets/positions of oligomers in genome MiSeqGmapDb (6 bp every 1 bp), position 0
+Done
