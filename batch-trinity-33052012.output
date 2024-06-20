@@ -1,0 +1,6 @@
+Starting our analysis Sat Dec 17 13:18:07 EST 2022
+Loading our BINF6308 Anaconda environment, which includes Trinity.
+Loading samtools.
+Starting De Novo Assembly Sat Dec 17 13:18:08 EST 2022
+Assemble the De Novo Transcriptome Sat Dec 17 13:18:08 EST 2022
+slurmstepd: error: *** JOB 33052012 ON c3000 CANCELLED AT 2022-12-17T15:07:13 ***

@@ -1,0 +1,35 @@
+Starting our analysis Sat Dec 17 15:59:53 EST 2022
+
+Key parameters
+TRANSCRIPTOME: data/trinity_de_novo/Trinity.fasta
+SWISSPROT_DB: /work/courses/BINF6308/inputFiles/blastDB/swissprot
+TRANSDECODER_DIR: results/trinity_de_novo.transdecoder_dir
+LONGEST_ORFS: results/trinity_de_novo.transdecoder_dir/longest_orfs.pep
+OUTFMT: results/blastPep_args.outfmt6
+Key parameters
+TRANSCRIPTOME: data/trinity_de_novo/Trinity.fasta
+SWISSPROT_DB: /work/courses/BINF6308/inputFiles/blastDB/swissprot
+TRANSDECODER_DIR: results/trinity_de_novo.transdecoder_dir
+LONGEST_ORFS: results/trinity_de_novo.transdecoder_dir/longest_orfs.pep
+OUTFMT: results/blastPep_args.outfmt6
+DOMTBLOUT: results/pfam.domtblout
+PFAMA_PATH: /work/courses/BINF6308/inputFiles/SampleDataFiles/Pfam-A.hmm
+PREDICTED_PROTEIN_PATH: results/predictedProteins
+FINAL_PROTEINS: results/predictedProteins/*transdecoder.pep
+
+
+Loading our BINF6308 Anaconda environment.
+Make directory for data files
+Moving de novo Trinity transcriptome data to the working directory
+Make directory for log files
+Starting ORF prediction pipeline Sat Dec 17 15:59:54 EST 2022
+Identify longORFs with TransDecoder.LongOrfs on data/trinity_de_novo/Trinity.fasta Sat Dec 17 15:59:54 EST 2022
+BLASTp of longest_orfs.pep against SwissProt BLAST DB at /work/courses/BINF6308/inputFiles/blastDB/swissprot Sat Dec 17 16:00:08 EST 2022
+Create pfamScan with hmmscan using the Pfam-A.hmm file found /work/courses/BINF6308/inputFiles/SampleDataFiles/Pfam-A.hmm Sat Dec 17 16:58:17 EST 2022
+Predict protiens with TransDecoder.Predict Sat Dec 17 17:47:38 EST 2022
+Copy TransDecoder.Predict outputs to results/predictedProteins
+mv: cannot stat ‘transdecoder’: No such file or directory
+Align predicted proteins to SwissProt DB Sat Dec 17 17:49:27 EST 2022
+ORF prediction pipeline complete Sat Dec 17 17:50:58 EST 2022
+Moving key files back to /home
+Analysis complete Sat Dec 17 17:50:58 EST 2022

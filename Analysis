@@ -1,0 +1,154 @@
+## ANALYSIS
+
+
+## Author
+
+Bhavitha Naga Sai Kandru
+
+
+## INTRODUCTION
+
+Take an organism from NCBI website. I have choosen "Vibrio Cholerea" the:
+DNA sequence:SRR21003528 and  
+RNA sequence:SRR19237628. 
+
+
+# Vibrio Cholerae:
+
+
+Vibrio cholerae is a Gram-negative, rod-shaped bacterium that is the causative agent of cholera, a serious and potentially life-threatening diarrheal disease. V. cholerae is a facultative anaerobe, which means that it can survive in both aerobic and anaerobic environments. It is typically found in water and is transmitted through the ingestion of contaminated water or food.
+
+Symptoms of cholera include watery diarrhea, dehydration, and electrolyte imbalances. In severe cases, cholera can lead to death if not treated promptly. The most effective way to prevent the spread of cholera is to improve access to clean water and adequate sanitation facilities. Vaccines are also available to protect against cholera, but they are not always widely available in areas with high rates of cholera transmission.
+
+V. cholerae is a member of the Vibrionaceae family and is classified as a member of the Gammaproteobacteria class. It is a facultative anaerobe and is motile due to the presence of a single polar flagellum. It has a thin, flexible outer membrane and a thick peptidoglycan layer, which gives it its characteristic rod shape. V. cholerae produces a variety of virulence factors, including the cholera toxin, which is responsible for the severe symptoms associated with cholera.V. cholerae has two circular chromosomes, together totalling 4 million base pairs of DNA sequence and 3,885 predicted genes.[52] The genes for cholera toxin are carried by CTXphi (CTXφ), a temperate bacteriophage inserted into the V. cholerae genome. 
+
+CTXφ is a filamentous phage that contains the genes for cholera toxin. Infectious CTXφ particles are produced when V. cholerae infects humans. Phage particles are secreted from bacterial cells without lysis. When CTXφ infects V. cholerae cells, it integrates into specific sites on either chromosome. These sites often contain tandem arrays of integrated CTXφ prophage. In addition to the ctxA and ctxB genes encoding cholera toxin, CTXφ contains eight genes involved in phage reproduction, packaging, secretion, integration, and regulation. 
+
+V. cholerae contains a genomic island of pathogenicity and is lysogenized with phage DNA. That means that the genes of a virus were integrated into the bacterial genome and made the bacteria pathogenic. The molecular pathway involved in expression of virulence is discussed in the pathology and current research sections belo
+ 
+## Methods 
+
+
+# Trimmomatic:
+
+Trimmomatic is a Java-based software tool that is used to trim and filter Illumina (Solexa) sequence data. It is often used in next-generation sequencing (NGS) pipelines to remove low-quality bases and adapter sequences from raw NGS data. This helps to improve the overall quality of the data and allows for more accurate downstream analyses, such as sequence alignment and variant calling. Trimmomatic takes FASTQ files as input and produces trimmed FASTQ files as output. It can be used to trim a variety of different types of sequences, including DNA, RNA, and amplicon sequences. It offers a number of different options for trimming and filtering, including the ability to trim based on quality scores, remove adapter sequences, and discard reads that are too short after trimming. Trimmomatic is a widely used tool in the field of genomics and is available as a standalone software package or as a module in various NGS analysis pipelines.It is maintained by the "University Maryland."
+
+
+# SPAdes:
+
+SPAdes is a de novo genome assembler for next-generation sequencing (NGS) data. It is a popular choice for assembling large genomes, such as those of bacteria and other microorganisms, and has also been used for assembling plant and animal genomes.SPAdes uses a combination of three different assembly algorithms (K-mer, greedy overlap-layout-consistency, and paired-end overlap-layout-consistency) to generate high-quality genome assemblies from raw NGS data. It is able to handle a wide range of sequencing technologies, including Illumina, PacBio, and Oxford Nanopore, and can handle both single-end and paired-end reads.SPAdes is implemented in Python and is available as a command-line tool or as a module in various NGS analysis pipelines. It is maintained by the St. Petersburg State University.
+
+
+# QUAST:
+
+It is a software tool for evaluating the quality of genome assemblies. It is used to assess the accuracy, completeness, and other metrics of genome assemblies generated from next-generation sequencing (NGS) data. QUAST takes as input a set of genome assemblies in FASTA format and compares them to a reference genome, if available. It generates a report that includes a variety of metrics, such as the number of contigs, N50, and the number of misassembled regions. It also provides visualizations, such as scatter plots and histograms, to help users understand the quality of the assemblies.QUAST is widely used in the field of genomics and is available as a command-line tool or as a module in various NGS analysis pipelines. It is implemented in Python and is also maintained by St. Petersburg State University. 
+
+
+# GSNAP:
+
+Gsnap is a software tool for aligning short nucleotide sequences, such as those produced by next-generation sequencing (NGS) technologies, to a reference genome. It is designed to handle large genome datasets and can align millions of reads in a short period of time. GSNAP uses a combination of hashing and dynamic programming to quickly and accurately align reads to a reference genome. It can handle a variety of different alignment scenarios, including single-end and paired-end reads, spliced alignments, and alignments with mismatches, insertions, and deletions. It can also align reads that have been quality trimmed or processed with adapter removal tools. GSNAP is implemented in C and is available as a command-line tool or as a module in various NGS analysis pipelines. It is maintained University of California, San Diego.Using GSNAP tool allot gmap database where the trimmed files are build.
+
+
+# Assemble: 
+
+As we have merge the data now the DeNovo file should be assembled using trinity command. trinity represents a novel method for the efficient and robust de novo reconstruction of transcriptomes from RNA-seq data. Trinity combines three independent software modules: Inchworm, Chrysalis, and Butterfly, applied sequentially to process large volumes of RNA-seq reads.Trinity performs best with strand-specific data, in which case sense and antisense transcripts can be resolved. For protocols on strand-specific RNA-Seq. This will assemble the data and stored the data.
+
+
+# Analyze:
+
+The assembled data has to undergo an analyze test to analyze the DeNovo transcrioptome by using analyzeTrinity.sh script and create a log and an error file.There are some general ways to characterize the quality of your assembly:
+1) Examine the RNA-Seq read representation of the assembly. Ideally, at least ~80% of your input RNA-Seq reads are represented by your transcriptome assembly. The remaining unassembled reads likely corresponds to lowly expressed transcripts with insufficient coverage to enable assembly, or are low quality or aberrant reads.
+2) Examine the representation of full-length reconstructed protein-coding genes, by searching the assembled transcripts against a database of known protein sequences.
+3) Use BUSCO to explore completeness according to conserved ortholog content.
+4) Compute the E90N50 transcript contig length - the contig N50 value based on the set of transcripts representing 90% of the expression data.
+5) Compute DETONATE scores. DETONATE provides a rigorous computational assessment of the quality of a transcriptome assembly, and is useful if you want to run several assemblies using different parameter settings or using altogether different tools. That assembly with the highest DETONATE score is considered the best one.
+6) Try using TransRate. TransRate generates a number of useful statistics for evaluating your transcriptome assembly. Read about TransRate here: http://genome.cshlp.org/content/26/8/1134. Note that certain statistics may be biased against the large numbers of transcripts that are very lowly expressed. Consider generating TransRate statistics for your transcriptome before and after applying a minimum expression-based filter.
+7) Explore rnaQUAST a quality assessment tool for de novo transcriptome assemblies.
+
+
+# Reading frames:
+
+A reading frame refers to one of three possible ways of reading a nucleotide sequence.There are actually six reading frames: three on the positive strand, and three (which are read in the reverse direction) on the negative strand.
+
+
+# Protein domains:
+
+Domains are the structural and functional units in a protein.Domains are responsible for a particular function or interaction, contributing to the overall role of a protein. Domains may exist in a variety of biological contexts, where similar domains can be found in proteins with different functions.
+
+
+# Sequence Similarity:
+
+Sequence similarity searching to identify homologous sequences is one of the first, and most informative, steps in any analysis of newly determined sequences. Modern protein sequence databases are very comprehensive, so that more than 80% of metagenomic sequence samples typically share significant similarity with proteins in sequence databases. Widely used programs are BLAST(basic local alignment search tool),PSI-BLAST(Position-Specific Iterative Basic Local Alignment Search Tool),SSEARCH,HMMER3, and FASTA. In this module we are using BLAST program.
+  BLAST: BLAST is a suite of algorithms and programs that are used for searching nucleotide and protein databases for sequence homologs. The acronym stands for Basic Local Alignment Search Tool. BLAST is one of the most widely used bioinformatics tools, and is commonly used to find regions of similarity between biological sequences. There are several different versions of BLAST, each designed for a specific purpose, such as searching protein databases (blastp), searching nucleotide databases (blastn), or searching for similar sequences within a single database (blastx). BLAST is fast and efficient, and is able to search through large databases quickly to find sequences that are similar to a query sequence.
+  PSI-BLAST: PSI-BLAST stands for Position-Specific Iterative Basic Local Alignment Search Tool. It is a computer program and algorithm used for searching protein databases for sequence homologs. PSI-BLAST is an iterative version of the popular BLAST (Basic Local Alignment Search Tool) algorithm, which is commonly used for searching nucleotide databases.
+  SSERACH: SSEARCH is a tool that is used for comparing protein or nucleotide sequences to databases of known sequences, in order to find similar sequences. It is an implementation of the Smith-Waterman algorithm, which is a popular algorithm for local sequence alignment.
+  HMMER3: HMMER3 is a software package that is used for searching protein databases for sequence homologs using hidden Markov models (HMMs). HMMs are a statistical model that is commonly used for analyzing and predicting the behavior of complex systems, such as biological sequences. HMMER3 is a third-generation implementation of the HMMER algorithm, which is known for its speed and sensitivity. It is widely used in bioinformatics and computational biology for tasks such as protein sequence alignment, gene prediction, and protein structure prediction. HMMER3 is a powerful tool for analyzing protein sequences and can be run on a wide range of computer systems.
+  FASTA: FASTA is a file format used for storing nucleotide or protein sequences. It is a widely used format in bioinformatics and computational biology, as it allows sequences to be stored and shared in a standardized format. The format is named after the FASTA software, which was one of the first programs developed for searching nucleotide and protein databases using sequence similarity. The format is simple and easy to use, and consists of a header line that begins with a ">" symbol, followed by the sequence on one or more lines.
+  
+
+# Hidden Markov models(HMMs):
+
+HMMs are a formal foundation for making probabilistic models of linear sequence 'labeling' problems.They provide a conceptual toolkit for building complex models just by drawing an intuitive picture. They are at the heart of a diverse range of programs, including genefinding, profile searches, multiple sequence alignment and regulatory site identification. HMMs are the Legos of computational sequence analysis. It's useful to imagine an HMM generating a sequence.There are two paths(a)underlying state path (b)observed sequence.
+A hidden Markov model (HMM) is a type of statistical model that can be used to model a sequence of observations, where the sequence is assumed to have been generated by a system with a certain underlying hidden state. In an HMM, the hidden state of the system is assumed to follow a Markov process, which means that the probability of transitioning to any particular state only depends on the current state and time, and not on the sequence of states that came before it.The main advantage of using an HMM to model a sequence of observations is that it allows us to make predictions about the future state of the system based on the current state and the observations we have seen so far. This can be useful in many applications, such as speech recognition, language modeling, and bioinformatics. To use an HMM, we first need to specify the underlying Markov process that generates the hidden states of the system. This is typically done by defining a set of states, a set of possible observations, and a set of probabilities that describe the transitions between states and the emission of observations. Once the model has been specified, we can use algorithms such as the Viterbi algorithm to make predictions about the hidden states of the system based on the observed sequence of observations.
+
+
+# TransDecorder:
+
+TransDecoder identifies candidate coding regions within transcript sequences, such as those generated by de novo RNA-Seq transcript assembly using Trinity, or constructed based on RNA-Seq alignments to the genome using Tophat and Cufflinks. One of the most important metrics is the Bit score. The Bit score is an important measure that indicates the statistical significance of an alignment. In simple terms, the higher the bit score, the more similar the two sequences are. Bit scores below 50 are generally assumed to be untrustworthy. The Bit score derives from the raw alignment Links to an external site. score, S, taking the statistical properties of the scoring system into account. Because Bit scores are normalized with respect to the scoring system, we can use them to compare alignment scores from different searches, i.e., Bit scores are independent of dataset size since they imply measuring the path weight of the specific alignment found.
+
+## Steps
+
+Firstly, imported DNA sequence from NCBI website. Then I have dumped them into my remote using fastqdump tool. After adding Dna to the remote trim them using trimmomatic tool to extract trimmed paired and unpaired data. After running trim, by using SPAdes tool to test the DNA.This is the first step of project.
+
+secondly, choose a RNA sequence from NCBI website. To this RNA sequence do the trim. After the trim build a database using GSNAP tool and store the output in results file. 
+
+later using the output create a sbatch script which include trinity_de_novo and analyzetrinity_de_novo to create a fasta files. This step is used to convert fastq file into fasta files. After getting the Trinity.fasta file run another sbatch script as transdecoder. This step is to check the longest ORf file, check predicted proteins, pfams and alingned predicted proteins by using blast and transdecorder tools.
+
+## Results
+
+In results .log and .err are created which are used to monitor the process of the scripts which are kept to run using sbatch tool. All the output files should be stored in results.
+
+## Summary
+
+create a script to run slipt the SRR* number into R1 and R2 files. later trim them into paired and unpaired fastq files. Do the same for RNA also and build a database for the fastq file. Run a sbatch script by using Trinity tool to generate Trinity.fasta files. Using the Trinity.fasta files as input run transdecoder script whcih inclueds predicted proteins, ORF's, pfam, and allign them. check for outputs in results folder. 
+
+
+# Tools used:
+
+Trimmomatic
+SPAdes
+Quast
+GSNAP
+TRINITY
+Trandecoder
+
+## Reference
+
+Altschul, S. F., T. L. Madden, A. A. Schäffer, J. Zhang, Z. Zhang, W. Miller, and D. J. Lipman. 1997. "Gapped BLAST and PSI-BLAST: A New Generation of Protein Database Search Programs." Nucleic Acids Res 25 (17): 3389–3402. Finn, Robert D., Jody Clements, William Arndt, Benjamin L. Miller, Travis J. Wheeler, Fabian Schreiber, Alex Bateman, and Sean R. Eddy. 2015. "HMMER Web Server: 2015 Update." Nucleic Acids Res 43 (W1): W30–W38. Haas, Brian J., Alexie Papanicolaou, Moran Yassour, Manfred Grabherr, Philip D. Blood, Joshua Bowden, Matthew Brian Couger, et al. 2013. "De Novo Transcript Sequence Reconstruction from RNA-Seq Using the Trinity Platform for Reference Generation and Analysis." Nat Protoc 8 (8): 1494–1512. Pertsemlidis, A., and 3rd Fondon J. W. 2001. “Having a BLAST with Bioinformatics (and Avoiding BLASTphemy).” Genome Biol 2 (10): REVIEWS2002–REVIEWS2002.
+
+https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/readingframe.html
+
+Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. BIOINFORMATICS, 30(15), 2114–2120. 
+
+https://doi.org/10.1093/bioinformatics/btu170
+
+Haas, B. J., Papanicolaou, A., Yassour, M., Grabherr, M., Blood, P. D., Bowden, J., Couger, M. B., Eccles, D., Li, B., Lieber, M., MacManes, M. D., Ott, M., Orvis, J., Pochet, N., Strozzi, F., Weeks, N., Westerman, R., William, T., Dewey, C. N., … Regev, A. (2013). De novo transcript sequence reconstruction from RNA-seq using the Trinity platform for reference generation and analysis. Nature Protocols, 8(8), 1494–1512. 
+
+https://doi.org/10.1038/nprot.2013.084 
+
+https://github.com/trinityrnaseq/trinityrnaseq/wiki 
+
+https://github.com/trinityrnaseq/trinityrnaseq/wiki/Trinity-Progress-Monitoring 
+
+https://github.com/trinityrnaseq/trinityrnaseq/wiki/Running-Trinity 
+
+https://github.com/trinityrnaseq/trinityrnaseq/wiki/Transcriptome-Assembly-Quality-Assessment
+
+https://www.ncbi.nlm.nih.gov/Class/MLACourse/Original8Hour/Genetics/readingframe.html
+
+https://www.ebi.ac.uk/training/online/courses/protein-classification-intro-ebi-resources/protein-classification/what-are-protein-domains/
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3820096/
+
+https://www.nature.com/articles/nbt1004-1315
+
