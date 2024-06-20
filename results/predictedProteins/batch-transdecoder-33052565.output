@@ -1,0 +1,25 @@
+Starting our analysis Sat Dec 17 15:08:32 EST 2022
+
+Key parameters
+TRANSCRIPTOME: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/data/trinity_de_novo/Trinity.fasta
+SWISSPROT_DB: /work/courses/BINF6308/inputFiles/blastDB/swissprot
+TRANSDECODER_DIR: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/trinity_de_novo.transdecoder_dir
+LONGEST_ORFS: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/trinity_de_novo.transdecoder_dir/longest_orfs.pep
+OUTFMT: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/blastPep_args.outfmt6
+DOMTBLOUT: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/pfam.domtblout
+PFAMA_PATH: /work/courses/BINF6308/inputFiles/SampleDataFiles/Pfam-A.hmm
+PREDICTED_PROTEIN_PATH: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/predictedProteins
+FINAL_PROTEINS: /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/predictedProteins/*transdecoder.pep
+
+
+Loading our BINF6308 Anaconda environment.
+Starting ORF prediction pipeline Sat Dec 17 15:08:32 EST 2022
+Identify longORFs with TransDecoder.LongOrfs on /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/data/trinity_de_novo/Trinity.fasta Sat Dec 17 15:08:32 EST 2022
+BLASTp of longest_orfs.pep against SwissProt BLAST DB at /work/courses/BINF6308/inputFiles/blastDB/swissprot Sat Dec 17 15:08:33 EST 2022
+Create pfamScan with hmmscan using the Pfam-A.hmm file found /work/courses/BINF6308/inputFiles/SampleDataFiles/Pfam-A.hmm Sat Dec 17 15:10:03 EST 2022
+Predict protiens with TransDecoder.Predict Sat Dec 17 15:10:03 EST 2022
+Copy TransDecoder.Predict outputs to /scratch/kandru.b/fp_f2022_binf6308_sec3-bhavithakandru/results/predictedProteins
+Align predicted proteins to SwissProt DB Sat Dec 17 15:10:04 EST 2022
+ORF prediction pipeline complete Sat Dec 17 15:11:34 EST 2022
+Moving key files back to /home
+Analysis complete Sat Dec 17 15:11:54 EST 2022
